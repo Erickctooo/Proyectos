@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Cadenas/Cadenas.iml" filepath="$PROJECT_DIR$/Cadenas/Cadenas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DetalleLibro/DetalleLibro.iml" filepath="$PROJECT_DIR$/DetalleLibro/DetalleLibro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EjercicioDetallePersona/EjercicioDetallePersona.iml" filepath="$PROJECT_DIR$/EjercicioDetallePersona/EjercicioDetallePersona.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EjercicioDetalleProducto/EjercicioDetalleProducto.iml" filepath="$PROJECT_DIR$/EjercicioDetalleProducto/EjercicioDetalleProducto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EjercicioGeneradorEmail/EjercicioGeneradorEmail.iml" filepath="$PROJECT_DIR$/EjercicioGeneradorEmail/EjercicioGeneradorEmail.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EjercicioSistemaReservaHotel/EjercicioSistemaReservaHotel.iml" filepath="$PROJECT_DIR$/EjercicioSistemaReservaHotel/EjercicioSistemaReservaHotel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Escritorio.iml" filepath="$PROJECT_DIR$/Escritorio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HolaMundo/HolaMundo.iml" filepath="$PROJECT_DIR$/HolaMundo/HolaMundo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RetoPresentaacion/RetoPresentaacion.iml" filepath="$PROJECT_DIR$/RetoPresentaacion/RetoPresentaacion.iml" />
+    </modules>
+  </component>
+</project>
