@@ -1,0 +1,15 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block contenido %}
+<link rel="stylesheet" href="{% static 'css/agregar.css' %}">
+<div class="container1">
+    <div class="titulo">
+        <h1>Agregar Catalogo</h1>
+    </div>
+        <form  method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{form.as_p}}
+            <button type="submit" id="new">Agregar</button>
+        </form>
+    </div>
+{% endblock %}

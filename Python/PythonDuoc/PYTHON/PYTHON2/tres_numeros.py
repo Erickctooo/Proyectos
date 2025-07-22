@@ -1,0 +1,5 @@
+num1=int(input("ingrese su primer numero"))
+num2=int(input("ingrese su segundo numero"))
+num3=int(input("ingrese su tercer numero"))
+suma=(num1+num2+num3)
+print("la suma de los tres numeros ingresados es", suma)

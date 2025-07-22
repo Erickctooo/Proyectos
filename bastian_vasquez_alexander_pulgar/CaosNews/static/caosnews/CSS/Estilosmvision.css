@@ -1,0 +1,37 @@
+
+/*TEXTO*/
+#textos{
+    background-color: #e8e8e4;
+    padding: 50px 50px;
+    text-align: justify;
+}
+
+.mis h4{
+    font-weight: bold;
+    margin: 20px;
+}
+
+.mis p{
+    margin: 20px;
+    font-size: large;
+}
+
+.vis h4{
+    font-weight: bold;
+    margin: 20px;
+}
+
+.vis p{
+    font-size: large;
+    margin: 20px;
+}
+
+.obj h4{
+    font-weight: bold;
+    margin: 20px;
+}
+
+.obj p{
+    font-size: large;
+    margin: 20px;
+}

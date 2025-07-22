@@ -1,0 +1,98 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block contenido %}
+
+<link rel="stylesheet" href="{% static 'css/agenda.css '%}">
+<main>
+    <form action="" class="formulario" id="formulario">
+        <!-- Grupo: nombre -->
+        <div class="formulario__grupo" id="grupo__nombre">
+            <label for="nombre" class="formulario__label">Nombre</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El Nombre tiene que ser de 3 a 16 digitos .</p>
+        </div>
+
+        <!-- Grupo: Apellido -->
+        <div class="formulario__grupo" id="grupo__apellido">
+            <label for="Apellido" class="formulario__label">Apellido</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El Apellido tiene que ser de 2 a 30 digitos.</p>
+        </div>
+
+        <!-- Grupo: direccion -->
+        <div class="formulario__grupo" id="grupo__direccion">
+            <label for="direccion" class="formulario__label">Direccion</label>
+            <div class="formulario__grupo-input">
+                <input type="direccion" class="formulario__input" name="direccion" id="direccion">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">La Direccion tiene que ser de 3 a 40 dígitos.</p>
+        </div>
+
+        <!-- Grupo: Rut -->
+        <div class="formulario__grupo" id="grupo__rut">
+            <label for="rut" class="formulario__label">Rut</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="rut" id="rut" placeholder="##.###.###-# Si es K remplaze con un 0">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El Rut solo puede contener numeros , puntos y guion .</p>
+        </div>
+
+        <!-- Grupo: Correo Electronico -->
+        <div class="formulario__grupo" id="grupo__correo">
+            <label for="correo" class="formulario__label">Correo Electrónico</label>
+            <div class="formulario__grupo-input">
+                <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+        </div>
+
+
+        <div class="formulario__grupo" id="grupo__genero">
+            <label for="correo" class="formulario__label">Genero</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="genero" id="genero" placeholder="masculino/femenino/otro">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">Ingresar genero correctamente masculino/femenino/otro. </p>
+        </div>
+
+        <!-- Grupo: Teléfono -->
+        <div class="formulario__grupo" id="grupo__telefono">
+            <label for="telefono" class="formulario__label">Teléfono</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="999 999 999">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 9 dígitos.</p>
+        </div>
+
+        <!-- Grupo: Terminos y Condiciones -->
+        <div class="formulario__grupo" id="grupo__terminos">
+            <label class="formulario__label" style="color: rgb(109, 109, 109);">
+                <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                Acepto los Terminos y Condiciones 
+            </label>
+        </div>
+
+        <div class="formulario__grupo formulario__grupo-btn-enviar">
+            <button type="submit" class="formulario__btn">Enviar</button>
+            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Agendado exitosamente!</p>
+        </div>
+        <script src="{% static 'java/Agenda.js' %}"></script>
+    </form>
+</main>
+
+
+
+
+{% endblock %}

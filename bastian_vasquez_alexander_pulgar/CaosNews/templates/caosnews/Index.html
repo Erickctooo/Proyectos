@@ -1,0 +1,54 @@
+
+
+{% extends 'caosnews/base.html' %}
+
+{% load static %}
+
+{% block contenido %}
+
+<head>
+    <link rel="stylesheet" href="{% static 'caosnews/CSS/EstilosIndex.css' %}">
+</head>
+
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="5000">
+        <img src="{% static 'caosnews/img/Slider1.jpg' %}" class="d-block w-100" alt="100px">
+      </div>
+      <div class="carousel-item" data-bs-interval="5000">
+        <img src="{% static 'caosnews/img/Slider2.jpg' %}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="5000">
+        <img src="{% static 'caosnews/img/Slider3.jpg' %}" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<section id="parrafos">
+    <div>
+        <img src="{% static 'caosnews/img/entrevista foto_2.jpg' %}" alt="">
+        <p>En Caos News, nos apasiona proporcionar noticias precisas y relevantes a la sociedad. 
+            Creemos en el poder de la información para fomentar la transparencia y la rendición de cuentas, y para promover la libertad de expresión y la democracia.
+            Nuestro equipo de periodistas altamente calificados se dedica a investigar y verificar los hechos, y a proporcionar análisis y contexto para ayudar a nuestros lectores a entender mejor los acontecimientos del mundo. Nos esforzamos por ser un faro de integridad periodística y ética, y estamos comprometidos con la excelencia en nuestro trabajo para proporcionar informacion veridica y de calidad.
+        </p>
+    </div>
+    <div>
+        <img src="{% static 'caosnews/img/jovenes-periodistas-2.jpg' %}" alt="">
+        <p>
+            En Caos New trabajamos con un equipo de profesionales altamente capacitados y comprometidos con la ética periodística.
+            Cada uno de nuestros miembros cuenta con una amplia experiencia en su área de especialización, 
+            lo que nos permite ofrecer una amplia variedad de enfoques y perspectivas en nuestras noticias y reportajes.
+            Creemos en la importancia de la calidad del trabajo periodístico, y es por eso que nos esforzamos por ofrecer siempre la información más precisa y completa posible. 
+            Además, estamos comprometidos con la innovación y la tecnología, lo que nos permite estar siempre a la vanguardia en el mundo del periodismo.
+        </p>
+    </div>
+</section>
+
+{% endblock %}

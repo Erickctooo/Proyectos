@@ -1,0 +1,16 @@
+{% extends 'caosnews/base.html' %}
+
+{% load static %}
+
+{% block contenido %}
+<link rel="stylesheet" href="{% static 'caosnews/css/EstilosCrud.css' %}">
+<div class="container1">
+    <h1>Agregar Suscripcion</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit" id="new">Agregar</button>
+    </form>
+</div>
+
+{% endblock %}

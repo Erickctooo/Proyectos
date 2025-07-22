@@ -1,0 +1,128 @@
+#crud{
+    background-image: url(../img/pexels-markus-winkler-4057659.jpg) ;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.containerrev{
+    padding: 10px;
+
+}
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #e8e8e4;
+}
+
+#customers td,
+#customers th {
+    border: 1px solid rgb(17, 4, 4);
+    text-align: center;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+    background-color: #ddd;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #073b4c;
+    color: white;
+}
+
+#customers #mid {
+    text-align: center;
+}
+
+#customers #up {
+    background-color: #073b4c;
+    border-color: white;
+    border-radius: 5px;
+    padding: 8px;
+    color: white;
+}
+
+#customers #del {
+    background-color: red;
+    border-color: white;
+    border-radius: 5px;
+    padding: 8px;
+    color: white;
+}
+
+#customers button {
+    width: 100%;
+}
+
+.container1 #new {
+    background-color: #073b4c;
+    border-color: red;
+    border-radius: 5px;
+    padding: 8px;
+    color: white;
+}
+
+.container2 #new1 {
+    background-color: #073b4c;
+    border-color: red;
+    border-radius: 5px;
+    padding: 8px;
+    color: white;
+}
+
+h1 {
+    color: black;
+}
+
+.container1 input {
+    padding: 8px;
+}
+
+.container2 input {
+    padding: 8px;
+}
+
+.container1 {
+    margin: 80px 240px 60px 240px;
+    padding: 0px 100px 100px 100px;
+}
+
+.container2 {
+    margin: 80px 240px 60px 240px;
+    padding: 0px 100px 100px 100px;
+}
+
+#new3 {
+    padding: 8px;
+    background-color: #073b4c;
+    color: white;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    #customers {
+      font-size: 12px; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+    }
+  
+    #customers td,
+    #customers th {
+      padding: 6px; /* Reduce el relleno de las celdas para pantallas más pequeñas */
+      flex-direction: column;
+    }
+
+    img{
+        width: 50px;
+    }
+
+  
+    /* Otros estilos específicos para pantallas más pequeñas */
+  }
+  

@@ -1,0 +1,79 @@
+{% extends 'caosnews/base.html' %}
+
+{% load static %}
+
+{% block contenido %}
+<head>
+    <link rel="stylesheet" href="{% static 'caosnews/CSS/EstilosGaleria.css' %}">
+</head>
+<section id="gale">
+        <div class="gal1">
+            <div class="galeria1">
+                <div class="foto">
+                    <img src="{% static 'caosnews/img/Imagen1.jpeg' %}" alt="">
+                </div>
+                <div class="pie">
+                    <p>"Queremos tu opinión</p>
+                </div>
+            </div>
+            <div class="galeria1">
+                <div class="foto">
+                    <img src="{% static 'caosnews/img/Imagen2.jpeg' %}" alt="">
+                </div>
+                <div class="pie">
+                    <p>"Rueda de prensa"</p>
+                </div>
+            </div>
+            <div class="galeria1">
+                <div class="foto">
+                    <img src="{% static 'caosnews/img/Imagen3.jpeg' %}" alt="">
+                </div>
+                <div class="pie">
+                    <p>"Nos importa la verdad"</p>
+                </div>
+            </div>
+            <div class="galeria1">
+                <div class="foto">
+                    <img src="{% static 'caosnews/img/Imagen4.jpeg' %}" alt="">
+                </div>
+                <div class="pie">
+                    <p>"El mundo está cambiando"</p>
+                </div>
+            </div>
+        </div>
+        <div class="gal2">
+            <div class="galeria2">
+                <div class="foto">
+                    <img src="{% static 'caosnews/img/Imagen5.jpeg' %}" alt="">
+                </div>
+                <div class="pie">
+                    <p>"La tecnología cambió el periodismo"</p>
+                </div>
+            </div>
+            <div class="galeria2">
+                <div class="foto">
+                    <img src="{% static 'caosnews/img/Imagen6.jpeg' %}" alt="">
+                </div>
+                <div class="pie">
+                    <p>"El detrás de cámara"</p>
+                </div>
+            </div>
+            <div class="galeria2">
+                <div class="foto">
+                    <img src="{% static 'caosnews/img/Imagen7.jpeg' %}" alt="">
+                </div>
+                <div class="pie">
+                    <p>"El mundo del periodismo"</p>
+                </div>
+            </div>
+            <div class="galeria2">
+                <div class="foto">
+                    <img src="{% static 'caosnews/img/Imagen8.jpeg' %}" alt="">
+                </div>
+                <div class="pie">
+                    <p>"Conoce el periodismo digital"</p>
+                </div>
+            </div>
+        </div>
+</section>
+{% endblock %}

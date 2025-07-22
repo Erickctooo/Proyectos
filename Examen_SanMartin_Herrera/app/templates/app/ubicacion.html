@@ -1,0 +1,15 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block contenido %}
+
+<link rel="stylesheet" href="{% static 'css/ubicacion.css '%}">
+<div class="caja1">
+    <div id="map">
+        <script src="{% static 'java/Mapa.js' %}"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>  
+    </div>
+</div>
+
+
+
+{% endblock %}

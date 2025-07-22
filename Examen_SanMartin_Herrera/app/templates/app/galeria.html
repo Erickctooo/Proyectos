@@ -1,0 +1,87 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block contenido %}
+
+<link rel="stylesheet" href="{% static 'css/galeria.css '%}">
+<h1>Galeria del taller</h1>
+
+    <div class="gal">
+      <div class="galeria">
+        <div class="foto">
+          <img src="{% static 'img/tuning.jpg' %}" alt="">
+        </div>
+        <div class="pie">
+            <p>Tuning de autos</p>
+        </div>
+      </div>
+  
+      <div class="galeria">
+        <div class="foto">
+          <img src="{% static 'img/pintando_auto.jpg' %}" alt="">
+        </div>
+        <div class="pie">
+            <p>Pintado de autos</p>
+        </div>
+      </div>
+  
+      <div class="galeria">
+        <div class="foto">
+          <img src="{% static 'img/cambio-aceite-coche.jpg' %}" alt="">
+        </div>
+        <div class="pie">
+            <p>Cambio de aceite</p>
+        </div>
+      </div>
+  
+      <div class="galeria">
+        <div class="foto">
+          <img src="{% static 'img/Cambio-de-ruedas.jpg' %}" alt="">
+        </div>
+        <div class="pie">
+            <p>Cambio de ruedas</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="gal2">
+      <div class="galeria">
+        <div class="foto">
+          <img src="{% static 'img/desabolladura-y-pintura-para-autos_1050x698.25.jpg' %}" alt="">
+        </div>
+        <div class="pie">
+            <p>Desabolladura y pintura</p>
+        </div>
+      </div>
+  
+      <div class="galeria">
+        <div class="foto">
+          <img src="{% static 'img/calibraciondelmotor.jpg' %}" alt="">
+        </div>
+        <div class="pie">
+            <p>Calibracion del motor</p>
+        </div>
+      </div>
+  
+      <div class="galeria">
+        <div class="foto">
+          <img src="{% static 'img/cambio de vidrio.jpg' %}" alt="">
+        </div>
+        <div class="pie">
+            <p>Cambio de vidrio</p>
+        </div>
+      </div>
+  
+      <div class="galeria">
+        <div class="foto">
+          <img src="{% static 'img/frenosportada.jpg' %}" alt="">
+        </div>
+        <div class="pie">
+            <p>Revision de frenos</p>
+        </div>
+      </div>
+    </div>
+
+
+{% endblock %}

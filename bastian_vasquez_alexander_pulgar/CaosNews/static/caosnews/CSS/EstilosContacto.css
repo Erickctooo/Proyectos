@@ -1,0 +1,23 @@
+
+#formu{
+    background-image: url(../img/pexels-markus-winkler-4057659.jpg) ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+}
+.formulario{
+    padding: 20px;
+    color: #fff;
+    background-color: #073b4c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.formulario button{
+    color: #fff;
+    background-color: #0081a7;
+}

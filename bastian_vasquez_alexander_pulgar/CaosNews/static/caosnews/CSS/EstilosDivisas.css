@@ -1,0 +1,67 @@
+
+/*DIVISAS*/
+
+#divisas{
+  background-color: #e8e8e4;
+  padding: 20px;
+}
+.cajadolar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #000;
+  }
+  
+  .cajadolar img {
+    width: 10%; 
+    height: auto; 
+    margin-right: 10px; 
+  }
+  .cajauf {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #000;
+  }
+  
+  .cajauf img {
+    width: 10%; 
+    height: auto; 
+    margin-right: 10px; 
+  }
+  .cajaeuro {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #000;
+  }
+  
+  .cajaeuro img {
+    width: 10%; 
+    height: auto; 
+    margin-right: 10px; 
+  }
+  .cajautm {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #000;
+  }
+  
+  .cajautm img {
+    width: 10%; 
+    height: auto; 
+    margin-right: 10px; 
+  }
+  .cajaipc {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #000;
+  }
+  
+  .cajaipc img {
+    width: 10%;
+    height: auto; 
+    margin-right: 10px;
+  }

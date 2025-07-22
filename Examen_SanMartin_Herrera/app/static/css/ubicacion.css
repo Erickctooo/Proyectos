@@ -1,0 +1,23 @@
+body{
+    background-image: url(../img/img2.jpg);
+    
+}
+
+
+.caja1{
+	width: 100%;
+	border-radius: 6px;
+	overflow: hidden;
+	background:#fff;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	cursor: default;
+}
+#map{
+    height: 750px;
+    width: 100%;   
+    border-radius: 0%;
+}   
+
+
+

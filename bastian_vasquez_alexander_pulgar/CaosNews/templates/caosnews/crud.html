@@ -1,0 +1,99 @@
+{% extends 'caosnews/base.html' %}
+
+{% load static %}
+
+{% block contenido %}
+<head>
+    <link rel="stylesheet" href="{% static 'caosnews/css/EstilosCrud.css' %}">
+</head>
+<section id="crud">
+    <div class="containerrev">
+        <h1>Revistas</h1>
+        <table id="customers" border="1">
+            <thead>
+                <th>Nombre</th>
+                <th>Articulo</th>
+                <th>Mes</th>
+                <th>Stock</th>
+                <th>Precio</th>
+                <th>Imagen</th>
+                <th colspan="2" id="mid">Accion</th>
+            </thead>
+            {% for x in rev %}
+            <tr>
+                <td>{{x.nombre}}</td>
+                <td>{{x.articulo}}</td>
+                <td>{{x.mes}}</td>
+                <td>{{x.stock}}</td>
+                <td>{{x.precio}}</td>
+                <td><img src="{{ x.foto.url }}"  width="100px"></td>
+                <td>
+                    <a href="actualizarrev/{{x.id}}"><button id="up">Actualizar</button> </a>
+
+                    <a href="eliminarrev/{{x.id}}"><button id="del">Eliminar</button></a>
+                </td>
+
+            </tr>
+                {% endfor %}
+        </table>
+        <br><br>
+        <a href="{% url 'agregar' %}"><button id="new3">Agregar Revista</button></a>
+    </div>
+
+    <div class="containerrev">
+        <h1>Diarios</h1>
+        <table id="customers" border="1">
+            <thead>
+                <th>Dia</th>
+                <th>Stock</th>
+                <th>Precio</th>
+                <th>Imagen</th>
+                <th colspan="2" id="mid">Accion</th>
+            </thead>
+            {% for x in diar %}
+            <tr>
+                <td>{{x.dia}}</td>
+                <td>{{x.stock}}</td>
+                <td>{{x.precio}}</td>
+                <td><img src="{{ x.foto.url }}"  width="100px"></td>
+                <td>
+                    <a href="actualizardiario/{{x.id}}"><button id="up">Actualizar</button> </a>
+
+                    <a href="eliminardiario/{{x.id}}"><button id="del">Eliminar</button></a>
+                </td>
+
+            </tr>
+                {% endfor %}
+        </table>
+        <br><br>
+        <a href="{% url 'agregardiario' %}"><button id="new3">Agregar Diario</button></a>
+    </div>
+
+    <div class="containerrev">
+        <h1>Suscripciones</h1>
+        <table id="customers" border="1">
+            <thead>
+                <th>Tiempo</th>
+                <th>Precio</th>
+                <th>Descripcion</th>
+                <th colspan="2" id="mid">Accion</th>
+            </thead>
+            {% for x in susc %}
+            <tr>
+                <td>{{x.tiempo}}</td>
+                <td>{{x.precio}}</td>
+                <td>{{x.descripcion}}</td>
+                <td>
+                    <a href="actualizarsuscripcion/{{x.id}}"><button id="up">Actualizar</button> </a>
+
+                    <a href="eliminarsuscripcion/{{x.id}}"><button id="del">Eliminar</button></a>
+                </td>
+
+            </tr>
+                {% endfor %}
+        </table>
+        <br><br>
+        <a href="{% url 'agregarsuscripcion' %}"><button id="new3">Agregar Suscripcion</button></a>
+    </div>
+</section>
+{% endblock %}

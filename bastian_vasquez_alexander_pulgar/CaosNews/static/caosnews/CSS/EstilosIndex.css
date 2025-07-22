@@ -1,0 +1,37 @@
+
+/*PARRAFOS*/
+#parrafos{
+    background-color: #e8e8e4;
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#parrafos img{
+    padding-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+#parrafos div{
+    padding: 30px 30px;
+}
+
+#parrafos div p{
+    text-align: justify;
+}
+
+
+/*RESPONSIVE*/
+@media(max-width:799px){    
+    #parrafos{
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 425px){
+    #parrafos p{
+        font-size: small;
+    }
+}

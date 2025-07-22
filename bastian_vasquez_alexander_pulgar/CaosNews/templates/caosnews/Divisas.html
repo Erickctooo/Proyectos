@@ -1,0 +1,32 @@
+{% extends 'caosnews/base.html' %}
+
+{% load static %}
+
+{% block contenido %}
+<head>
+    <link rel="stylesheet" href="{% static 'caosnews/CSS/EstilosDivisas.css' %}">
+    <script src="{% static 'caosnews/js/api.js' %}"></script>
+</head>
+<section id="divisas">
+        <div class="cajadolar">
+        <img src="{% static 'caosnews/img/Flag_of_the_United_States.svg.webp' %}" alt="Imagen">
+            <p id="valor-dolar"></p>
+        </div>
+        <div class="cajauf">
+            <img src="{% static 'caosnews/img/UF.png' %}" alt="Imagen">
+            <p id="valor-uf"></p>
+        </div>
+        <div class="cajaeuro">
+            <img src="{% static 'caosnews/img/El-euro-entra-en-circulacion-tras-una-decada-de-medidas-para-la-integracion-economica.png' %}" alt="Imagen">
+            <p id="valor-euro"></p>
+        </div>
+        <div class="cajautm">
+            <img src="{% static 'caosnews/img/20180522082608.jpg' %}" alt="Imagen">
+            <p id="valor-utm"></p>
+        </div>
+        <div class="cajaipc">
+            <img src="{% static 'caosnews/img/image_uso_ipc.svg' %}" alt="Imagen">
+            <p id="valor-ipc"></p>
+        </div>
+</section>
+{% endblock %}

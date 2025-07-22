@@ -1,0 +1,15 @@
+body{
+    background-image: url(../img/img2.jpg);
+    
+}
+.container {
+    display:inline-flexbox;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+    padding-top: 4%;
+    
+}
+.boton{
+    float: right;
+}

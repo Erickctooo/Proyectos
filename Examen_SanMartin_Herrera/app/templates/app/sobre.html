@@ -1,0 +1,67 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block contenido %}
+
+<link rel="stylesheet" href="{% static 'css/sobre.css '%}">
+<div class="caja1">
+    <div class="text1">
+        <h2> Nuestra mision para Juan Mecanico</h2>
+        <p>Nuestra mision para este equipo de alumnos recien egresados, es llamar la atencion de la gente a que vengan a este taller, hacer mas conocido este taller y darnos a conocer hacia mas gente.
+            Lo cual lo conseguiremos a traves de una pagina simple y rapida de entender, en la pagina se presentan las especializaciones de los alumnos y los trabajos 
+            ya realizados por estos mismos alumnos.
+        </p>
+    </div>
+</div>
+<br>
+<div class="caja2">
+    <div class="text2">
+        <h2>Vision</h2>
+        <p> Es ser lideres en el negocio de talleres mecanicos, y con esto llegar a que mas gente se anime a venir a nuestro taller mecanico y sentir una experiencia unica con 
+            nuestros especialistas, que la misma gente gente nos recomiende como taller mecanico. 
+
+        </p>
+
+    </div>
+
+</div>
+
+    <div class="title-cards">
+        <h2>Nuestras Especialidades</h2>
+    </div>
+<div class="container-card">
+    
+<div class="card">
+    <figure>
+        <img src="{% static 'img/Electronica.jpg' %}">
+    </figure>
+    <div class="contenido-card">
+        <h3>Especialista en electronica automotriz</h3>
+        <p>Contamos con un especialista en electronica automotriz,
+            el especialista con el que contamos es una persona con amplio conocimiento, habilidades, destrezas y valores..</p>
+    </div>
+</div>
+<div class="card">
+    <figure>
+        <img src="{% static 'img/caja.jpg' %}">
+    </figure>
+    <div class="contenido-card">
+        <h3>Especialista en cajas de cambio</h3>
+        <p>Contamos con un especialista en cajas de cambio,
+            el cual realiza reparaciones en caja de cambios automaticas y manuales, </p>
+    </div>
+</div>
+<div class="card">
+    <figure>
+        <img src="{% static 'img/suspencion.jpg' %}">
+    </figure>
+    <div class="contenido-card">
+        <h3>Especialista en Direccion y Suspension</h3>
+        <p>Sin duda una de las funciones más importantes del auto es el sistema de dirección,
+            que es un conjunto de mecanismos que orientan las ruedas delanteras (o directrices) para que el conductor, sin esfuerzo, pueda guiar el vehículo.
+            Te ofrecemos el mejor servicio técnico para revisar, alinear o ajustar los componentes del sistema de tu auto</p>
+    </div>
+</div>
+</div>
+
+
+{% endblock %}

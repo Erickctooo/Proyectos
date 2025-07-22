@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Juan Mecanico</title>
+ 
+</head>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/base.css' %}">
+  <link rel="icon" href="{% static 'img/Logo-Juan.jpg' %}">
+<body>
+  <header>
+    <div class="logo">
+        <a href="{% url 'Index' %}"><img src="{% static 'img/Logo-Juan.jpg' %}" alt="" ></a>
+    </div>
+    <input type="checkbox" id="check">
+    <label for="check" class="mostrar-menu">
+        &#8801
+    </label>
+
+    <nav class="menu">
+        {% if user.is_authenticated %}
+        <a href="{% url 'logout' %}">Cerrar sesion</a>
+        <a href="#">@{{ user.username }}</a>
+        {% else %}
+        <a href="{% url 'login' %}">iniciar sesion</a>
+        <a href="{% url 'registro' %}">registrate</a>
+        {% endif %}
+        <a href="{% url 'Index' %}">Inicio</a>
+        {% if user.is_authenticated %}
+        <a href="{% url 'Sobre' %}"> nosotros</a>
+        <a href="{% url 'Galeria' %}">Galeria</a>
+        <a href="{% url 'Agendar' %}">Agendar</a>
+        <a href="{% url 'Ubicacion' %}">Ubicacion</a>
+        <a href="{% url 'Producto' %}">Producto</a>
+        <a href="{% url 'Carrito' %}"><img src="{% static 'img/carrito.png' %}" alt="" style="width: 50px;"></a >
+        {% endif %}
+        
+
+        <label for="check" class="esconder-menu">
+            &#215
+        </label>
+    </nav>
+    </header>
+
+<div id="contenido">
+
+    {% block contenido %}
+    {% endblock %}
+
+</div>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content-container">
+                <h3 class="website-logo">Juan Mecanico</h3>
+                <span class="footer-info">111 111 111</span>
+                <span class="footer-info">JuanMecanic@gmail.com</span>
+            </div>
+            <div class="footer-menus">
+                <div class="footer-content-container">
+                    <span class="menu-title">menu</span>
+
+                    {% if user.is_authenticated %}
+                    <a href="{% url 'logout' %}" class="menu-item-footer">CERRAR SESION</a>
+                    {% else %}
+                    <a href="{% url 'login' %}" class="menu-item-footer">INICIAR SESION</a>
+                    <a href="{% url 'registro' %}" class="menu-item-footer">REGISTRATE</a>
+                    {% endif %}
+                    <a href="{% url 'Index' %}" class="menu-item-footer">INICIO</a>
+                    {% if user.is_authenticated %}
+                    <a href="{% url 'Sobre' %}" class="menu-item-footer"> NOSOTROS</a>
+                    <a href="{% url 'Galeria' %}" class="menu-item-footer">GALERIA</a>
+                    <a href="{% url 'Agendar' %}" class="menu-item-footer">AGENDAR</a>
+                    <a href="{% url 'Ubicacion' %}" class="menu-item-footer">UBICACION</a>
+                    <a href="{% url 'Producto' %}" class="menu-item-footer">PRODUCTO</a>
+                    {% endif %}
+
+
+                </div>
+                <div class="footer-content-container">
+                    <span class="menu-title">legal</span>
+                    <a href="" class="menu-item-footer">Privacy Policy</a>
+                    <a href="" class="menu-item-footer">Cookies</a>
+                    <a href="" class="menu-item-footer">Legal Advice</a>
+                </div>
+            </div>
+            
+            <div class="footer-content-container">
+                <span class="menu-title">SIGUENOS</span>
+                <div class="social-container">
+                    <a target="_blank" href="https://www.facebook.com/" class="social-link"></a>
+                    <a target="_blank" href="https://twitter.com/" class="social-link"></a>
+                    <a target="_blank" href="https://www.instagram.com/" class="social-link"></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-container">
+            <span class="copyright">Copyright 2021, itskrey.com. All rights reserved.</span>
+        </div>
+    </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

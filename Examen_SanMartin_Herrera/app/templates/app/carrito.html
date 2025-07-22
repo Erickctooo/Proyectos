@@ -1,0 +1,83 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block contenido %}
+
+<link rel="stylesheet" href="{% static 'css/carrito.css '%}">
+<script src="{% static 'java/app.js' %}"></script>
+<div class="tit">
+    <h1>Tienda Del Taller</h1>
+</div>
+
+<section class="contenedor">
+    <!-- Contenedor de elementos -->
+    <div class="contenedor-items">
+        <div class="item">
+            <span class="titulo-item">Batería De Auto VARTA BLUE MF85-520 55AH 520CCA</span>
+            <img src="{% static 'img/bateri.png' %}" alt="" class="img-item">
+            <span class="precio-item">$71.690</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+            <span class="titulo-item">Aceite de Motor Liqui Moly Semi-Sintético 10W40 4L</span>
+            <img src="{% static 'img/lubri.png' %}" alt="" class="img-item">
+            <span class="precio-item">$59.990</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+            <span class="titulo-item">Agua Coolant PRESTONE Dex-cool 50% 1gal.</span>
+            <img src="{% static 'img/anti.png' %}" alt="" class="img-item">
+            <span class="precio-item">$17.990</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+            <span class="titulo-item">Neumático 255/55 R18 PILOT SPORT 4 SUV 109Y MICHELIN</span>
+            <img src="{% static 'img/neu.png' %}" alt="" class="img-item">
+            <span class="precio-item">$521.990</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+            <span class="titulo-item">Tripack Silicona, Cera 450cc Mas Ren. De Neumáticos 650cc MOTORLIFE</span>
+            <img src="{% static 'img/limpi.png' %}" alt="" class="img-item">
+            <span class="precio-item">$7.490</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+            <span class="titulo-item">Ampolleta Blue Visión W5w(t10) De 12v Y 5w Base W2.1x9.5d PHILIPS</span>
+            <img src="{% static 'img/luz.png' %}" alt="" class="img-item">
+            <span class="precio-item">$6.890</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+            <span class="titulo-item">Pastillas de Freno Delantera DGP PRO</span>
+            <img src="{% static 'img/pasti.png' %}" alt="" class="img-item">
+            <span class="precio-item">$12.140</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+            <span class="titulo-item">Cubre Asientos para Autos Confort con Ventilacion</span>
+            <img src="{% static 'img/asi.png' %}" alt="" class="img-item">
+            <span class="precio-item">$40.290</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+    </div>
+    <!-- Carrito de Compras -->
+    <div class="carrito" id="carrito">
+        <div class="header-carrito">
+            <h2>Tu Carrito</h2>
+        </div>
+
+        <div class="carrito-items">
+        </div>
+        <div class="carrito-total">
+            <div class="fila">
+                <strong>Tu Total</strong>
+                <span class="carrito-precio-total">
+                    $120.000
+                </span>
+            </div>
+            <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+        </div>
+    </div>
+</section>
+{% endblock %}

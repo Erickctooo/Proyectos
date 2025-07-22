@@ -1,0 +1,60 @@
+{% extends 'caosnews/base.html' %}
+
+{% load static %}
+
+{% block contenido %}
+<head>
+    <link rel="stylesheet" href="{% static 'caosnews/CSS/EstilosContacto.css' %}">
+</head>
+<section id="formu">
+        <div class="formulario">
+            <form id="form" action="" class="from">
+                <h2 class="tag">¡Comunicate con nosotros!</h2>
+                <label for="name">Nombre</label>
+                <br>
+                <input type="text" name="nombre" maxlength="15" placeholder="Ingresa tu nombre" required>
+                <br>
+                <label for="apellido">Apellido</label>
+                <br>
+                <input type="text" name="apellido" minlength="4" placeholder="Ingresa tu apellido" required>
+                <br>
+                <label for="apellidomaterno">Apellido materno</label>
+                <br>
+                <input type="text" name="apellidomaterno" placeholder="Ingresa tu apellido" required>
+                <br>
+                <label for="correo">Correo</label>
+                <br>
+                <input type="email" name="correo" placeholder="Ingresa tu correo" required>
+                <br>
+                <label for="rut">Rut</label>
+                <br>
+                <input type="text" name="rut" placeholder="Ingresa tu rut" required>
+                <br>
+                <label for="genero"> Genero</label>
+                <br>
+                <input type="radio" name="genero" value="Femenino">
+                <label for="red">Femenino</label>
+                <input type="radio" name="genero" value="Masculino">
+                <label for="blue">Masculino</label>
+                <input type="radio" name="genero" value="Otro">
+                <label for="green">Otro</label>
+                <br>
+                <label for="direccion">Direccion</label>
+                <br>
+                <input type="text" name="direccion" placeholder="Ingresa tu direccion" required>
+                <br>
+                <label for="numerotelefono">Telefono</label>
+                <br>
+                <input type="text" name="telefono" placeholder="Ingresa tu numero de telefono" required>
+                <br>
+                <label for="message">¡Dejanos tu mensaje!</label>
+                <br>
+                <textarea id="message" name="message" id="" cols="30" rows="10" placeholder=" ¡ Escribe tu mensaje !" required></textarea>
+                <br>
+                <button type="submit" class="btn primary full">Enviar</button>
+                <script src="{% static 'caosnews/js/formulario.js' %}"></script>
+            </form>
+        </div>
+</section>
+<script src="{% static 'caosnews/js/formulario.js' %}"></script>
+{% endblock %}
